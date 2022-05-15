@@ -25,19 +25,20 @@ SECRET_KEY = 'django-insecure-llud&9)&ogdd_dhi(j_-h6_8l!%9qg3*0+c%fd_p49fy^iell^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['lotfy.us-south.cf.appdomain.cloud']
+ALLOWED_HOSTS = ['lotfy.us-south.cf.appdomain.cloud','127.0.0.1']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'onlinecourse.apps.OnlinecourseConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'onlinecourse',
+   
 ]
 
 MIDDLEWARE = [
@@ -119,6 +120,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
