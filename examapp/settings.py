@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-llud&9)&ogdd_dhi(j_-h6_8l!%9qg3*0+c%fd_p49fy^iell^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['lotfy.us-south.cf.appdomain.cloud']
 
 
 # Application definition
